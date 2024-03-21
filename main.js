@@ -10,7 +10,9 @@ a.addEventListener('click',()=>{
    })
 
 
-
+window.onscroll = function(){
+  b.classList.remove("open");
+}
 
 
 

@@ -5,7 +5,7 @@
     list-style: none;
 }
 body{
-   background: #e3f2fd;
+
     transition: .6s ease;
     scroll-behavior: smooth;
 }
@@ -22,6 +22,17 @@ header{
     background: white;
     position: relative;
 }
+header .burger span{
+   display: flex;
+   flex-direction: column;
+   width: 10px;
+   height: 3px;
+   color: black;
+   background: black;
+}
+header .burger span:nth-child(2){
+   margin-top: 3px;
+}
 nav{
     
 }
@@ -31,7 +42,7 @@ nav ul{
 }
 nav ul li{
 margin-left: 20px;
-font-size: 25px;
+font-size: 20px;
 }
 nav ul li:hover{
     
@@ -117,15 +128,19 @@ nav ul li:hover{
  .con .box .text h1{
     width: 100%;
     font-size: 45px;
-    color: black;
+    color: rgb(58, 56, 65);
     margin-bottom: 30px;
  }
-
+ .con .box .text p{
+   line-height: 1.5;
+   font-size: 20px;
+ }
  .con .box .im{
     width: 40%;
  }
  .con .box .im img{
     width: 100%;
+    background: none;
     height: 400px;
  }
  @media (max-width: 992px){
@@ -226,6 +241,7 @@ height: 300px;
 .client h1{
     font-size: 30px;
     margin-bottom: 50px;
+    color: rgb(31, 134, 134);
 }
 .client .con{
     flex-direction: column;
@@ -244,6 +260,10 @@ height: 300px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+ 
+ }
+ .client .con .box .im h1{
+   color: black;
  }
  .client .con .box .im img{
     width: 200px;
@@ -252,6 +272,11 @@ height: 300px;
     margin-bottom: 20px;
  }
  .client .con .box .ms{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 1.5;
+   font-size: 20px;
     width: 100%;
  }
 
@@ -274,8 +299,14 @@ width: 100%;
 margin-bottom: 30px;
 width: 100%;
 }
+.contact .con h1{
+   font-size: 40px;
+   margin-bottom: 50px;
+   color: rgb(31, 134, 134);
+}
 .contact .con .suth h1{
 margin-bottom: 10px;
+color: black;
 }
 .contact .con .suth p{
 font-size: 30px;
@@ -348,5 +379,5 @@ font-size: 30px;
  }
  @media(max-width: 662px){
     footer h1{
-        font-size: 20px;
+        font-size: 15px;
     }}
